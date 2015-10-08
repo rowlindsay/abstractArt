@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=length\ width
+comment0.target=Rectangle(double,\ double)
+comment1.params=length\ width\ fill
+comment1.target=Rectangle(double,\ double,\ boolean)
+comment2.params=pen\ color
+comment2.target=void\ draw(gpdraw.DrawingTool,\ java.awt.Color)
+comment3.params=
+comment3.target=double\ getPerimeter()
+numComments=4

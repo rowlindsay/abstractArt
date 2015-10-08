@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=radius
+comment0.target=Circle(double)
+comment1.params=radius\ fill
+comment1.target=Circle(double,\ boolean)
+comment2.params=pen\ color
+comment2.target=void\ draw(gpdraw.DrawingTool,\ java.awt.Color)
+numComments=3
