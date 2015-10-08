@@ -28,7 +28,7 @@ public class Art
         int lengthDiv = 1;
         for(int i = scale; i>0; i--)
         {
-            double triLength = (double)100/lengthDiv;
+            double triLength = (double)200/lengthDiv;
             Triangle fractTri = new Triangle(triLength);
             //fractTri.draw(drawColor);
             pen.turnLeft(90);
