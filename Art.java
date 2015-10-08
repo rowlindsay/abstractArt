@@ -6,7 +6,7 @@ public class Art
     DrawingTool pen = new DrawingTool(pad);
     public void makeArt()
     {
-        Color drawColor = userColor("red");
+        Color drawColor = userColor("orange");
         drawFractal(10,drawColor);
     }
     
