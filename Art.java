@@ -10,6 +10,8 @@ public class Art
         drawFractal(10,drawColor);
     }
     
+    //Preconditions: none
+    //Post Conditions: a cool thing is drawn
     public void idk(Color drawColor)
     {
         for(int i=360;i>0;i--)
