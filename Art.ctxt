@@ -1,10 +1,10 @@
 #BlueJ class context
 comment0.params=
 comment0.target=void\ makeArt()
-comment1.params=drawColor
-comment1.target=void\ idk(java.awt.Color)
-comment2.params=scale\ drawColor
-comment2.target=void\ drawFractal(int,\ java.awt.Color)
+comment1.params=scale\ drawColor
+comment1.target=void\ drawFractal(int,\ java.awt.Color)
+comment2.params=
+comment2.target=void\ drawFractals()
 comment3.params=color
 comment3.target=java.awt.Color\ userColor(java.lang.String)
 numComments=4

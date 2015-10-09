@@ -6,29 +6,18 @@ public class Art
     DrawingTool pen = new DrawingTool(pad);
     public void makeArt()
     {
-        Color drawColor = userColor("orange");
-        drawFractal(10,drawColor);
-    }
-    
-    //Preconditions: none
-    //Post Conditions: a cool thing is drawn
-    public void idk(Color drawColor)
-    {
-        for(int i=360;i>0;i--)
-        {
-            pen.turnRight(1);
-            double randLength = (double)(Math.random()*360);
-            Triangle testTri= new Triangle(randLength);
-            testTri.draw(pen, drawColor);
-        }
+        Triral idk = new Triral();
+        idk.draw(pen);
+        //drawFractal(10,drawColor);
     }
     
     public void drawFractal(int scale, Color drawColor)
     {
         int lengthDiv = 1;
+        int size = 300;
         for(int i = scale; i>0; i--)
         {
-            double triLength = (double)100/lengthDiv;
+            double triLength = (double)size/lengthDiv;
             Triangle fractTri = new Triangle(triLength);
             fractTri.draw(pen,drawColor);
             pen.turnLeft(90);
@@ -36,6 +25,12 @@ public class Art
             pen.turnLeft(90);
             lengthDiv *= 2;
         }
+        pen.home();
+    }
+    
+    public void drawFractals()
+    {
+       
     }
     
     public Color userColor(String color)
