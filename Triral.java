@@ -2,8 +2,8 @@ import java.awt.Color;
 import gpdraw.*;
 public class Triral
 {
-    //Preconditions: none
-    //Post Conditions: a cool thing is drawn
+    //Pre: none
+    //Post: a triral is drawn
     public Triral()
     {
     }
