@@ -3,14 +3,17 @@ import gpdraw.*;
 public class Sunburst
 {
     private boolean rainbow;
+    private int radius;
     public Sunburst()
     {
         this.rainbow = false;
+        this.radius = 250;
     }
     
-    public Sunburst(boolean rainbow)
+    public Sunburst(int radius,boolean rainbow)
     {
         this.rainbow = rainbow;
+        this.radius = radius;
     }
     
     public void draw(DrawingTool pen)
@@ -21,10 +24,10 @@ public class Sunburst
             if(this.rainbow)
                 drawColor = Art.setRainColor(degree,drawColor);
             pen.setColor(drawColor);
-            pen.forward(250);
+            pen.forward(this.radius);
             pen.turn(180);
             pen.up();
-            pen.forward(250);
+            pen.forward(this.radius);
             pen.turnRight(179);
             pen.down();         //Make a line then rotate to the next degree (counter clockwise)
         }
