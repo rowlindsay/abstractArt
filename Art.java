@@ -6,9 +6,18 @@ public class Art
     DrawingTool pen = new DrawingTool(pad);
     public void makeArt()
     {
-        Color testColor = userColor("orange");
-        Tractal fun = new Tractal(10,testColor);
-        fun.draw(pen);
+        Color testColor = userColor("red");
+        for(int i=0;i<=360;i++)
+        {
+            pen.up();
+            pen.forward(200);
+            pen.down();
+            Tractal fun = new Tractal(10,testColor);
+            fun.draw(pen);
+            testColor = setRainColor(i,testColor);
+            pen.home();
+            pen.setDirection(i);
+        }
     }
     
     public Color userColor(String color)
