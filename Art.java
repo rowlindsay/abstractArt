@@ -6,7 +6,7 @@ public class Art
     DrawingTool pen = new DrawingTool(pad);
     public void makeArt()
     {
-        
+       
     }
     
     public Color userColor(String color)
