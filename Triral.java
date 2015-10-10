@@ -16,8 +16,8 @@ public class Triral
             drawColor = Art.setRainColor(i,drawColor);
             pen.turnRight(1);
             double randLength = (double)(Math.random()*360);
-            Triangle testTri= new Triangle(randLength);
-            testTri.draw(pen, drawColor);
+            Triangle testTri= new Triangle(randLength,drawColor);
+            testTri.draw(pen);
         }
     }
 }

@@ -3,15 +3,17 @@ import java.awt.Color;
 public class Triangle
 {
     private double length;
+    private Color color;
     
-    public Triangle(double length)
+    public Triangle(double length,Color color)
     {
         this.length = length;
+        this.color = color;
     }
     
-    public void draw(DrawingTool pen, Color color)
+    public void draw(DrawingTool pen)
     {
-        pen.setColor(color);
+        pen.setColor(this.color);
         pen.turnLeft(90);
         pen.forward(length/2);
         pen.turnRight(120);

@@ -6,9 +6,7 @@ public class Art
     DrawingTool pen = new DrawingTool(pad);
     public void makeArt()
     {
-        Color testColor = userColor("Blue");
-        Tractal fun = new Tractal();
-        fun.draw(300,testColor,pen);
+       
     }
     
     public Color userColor(String color)
