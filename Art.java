@@ -11,23 +11,6 @@ public class Art
         //drawFractal(10,drawColor);
     }
     
-    public void drawFractal(int scale, Color drawColor)
-    {
-        int lengthDiv = 1;
-        int size = 300;
-        for(int i = scale; i>0; i--)
-        {
-            double triLength = (double)size/lengthDiv;
-            Triangle fractTri = new Triangle(triLength);
-            fractTri.draw(pen,drawColor);
-            pen.turnLeft(90);
-            pen.forward(triLength/4);
-            pen.turnLeft(90);
-            lengthDiv *= 2;
-        }
-        pen.home();
-    }
-    
     public void makeSunburst(boolean rainbow)
     {
         Color drawColor = Color.red;
