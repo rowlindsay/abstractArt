@@ -6,34 +6,9 @@ public class Art
     DrawingTool pen = new DrawingTool(pad);
     public void makeArt()
     {
-        Triral idk = new Triral();
-        idk.draw(pen);
-        //drawFractal(10,drawColor);
+        
     }
     
-    public void makeSunburst(boolean rainbow)
-    {
-        Color drawColor = Color.red;
-        for (int degree=0; degree<360; degree++) //Run until 360 degrees are covered
-        {
-            if(rainbow)
-                drawColor = setRainColor(degree,drawColor);
-            pen.setColor(drawColor);
-            pen.forward(250);
-            pen.turn(180);
-            pen.up();
-            pen.forward(250);
-            pen.turnRight(179);
-            pen.down();         //Make a line then rotate to the next degree (counter clockwise)
-        }
-    }
-    
-    public void drawFractals()
-    {
-       
-    }
-    
-   
     public Color userColor(String color)
     {
         if(color.equals("black"))
