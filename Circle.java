@@ -7,15 +7,12 @@ public class Circle
     private Color color;
     // pre: 
     // post:
-    public Circle(double radius)
-    {
-        this.radius=radius;
-    }
     
-    public Circle(double radius, boolean fill)
+    public Circle(double radius, boolean fill,Color color)
     {
         this.radius=radius;
         this.fill=true;
+        this.color = color;
     }
 
     public void draw(DrawingTool pen)

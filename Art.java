@@ -10,7 +10,7 @@ public class Art
     
     public void drawCircSwirl()
     {
-        Color testColor = userColor("red");
+        Color testColor = Color.red;
         double x = -500;
         double y = 0;
         int i2 = 0;
@@ -27,37 +27,12 @@ public class Art
             pen.down();
             if(i%10==0)
             {
-                Circle dot = new Circle(Math.random()*10);
+                Circle dot = new Circle(Math.random()*10,false,drawColor);
                 dot.draw(pen);
+                drawColor = setRainColor(i/6,drawColor);
             }
             x += 0.5;
         }
-    }
-    
-    public Color userColor(String color)
-    {
-        if(color.equals("black"))
-            return Color.black;
-        else if(color.equals("blue"))
-            return Color.blue;
-        else if(color.equals("green"))
-            return Color.green;
-        else if(color.equals("cyan"))
-            return Color.cyan;
-        else if(color.equals("red"))
-            return Color.red;
-        else if(color.equals("magenta"))
-            return Color.magenta;
-        else if(color.equals("yellow"))
-            return Color.yellow;
-        else if(color.equals("white"))
-            return Color.white;
-        else if(color.equals("pink"))
-            return Color.pink;
-        else if(color.equals("orange"))
-            return Color.orange;
-        else
-            return Color.black;
     }
     
     static Color setRainColor(int i,Color curCol)
