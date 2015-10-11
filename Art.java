@@ -14,6 +14,22 @@ public class Art
         }
     }
     
+    public void drawTractLoop(int radius,int tractalScale)
+    {
+        Color testColor = Color.red;
+        for(int i=0;i<=360;i++)
+        {
+            pen.up();
+            pen.forward(radius);
+            pen.down();
+            Tractal fun = new Tractal(tractalScale,testColor);
+            fun.draw(pen);
+            testColor = setRainColor(i,testColor);
+            pen.home();
+            pen.setDirection(90-i);
+        }
+    }
+    
     public void drawCircSwirl(int xInit,int yInit)
     {
         double x = xInit;
