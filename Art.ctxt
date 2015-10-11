@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.params=
 comment0.target=void\ makeArt()
-comment1.params=color
-comment1.target=java.awt.Color\ userColor(java.lang.String)
-comment2.params=i\ curCol
-comment2.target=java.awt.Color\ setRainColor(int,\ java.awt.Color)
-numComments=3
+comment1.params=
+comment1.target=void\ drawSunSwirl()
+comment2.params=color
+comment2.target=java.awt.Color\ userColor(java.lang.String)
+comment3.params=i\ curCol
+comment3.target=java.awt.Color\ setRainColor(int,\ java.awt.Color)
+numComments=4

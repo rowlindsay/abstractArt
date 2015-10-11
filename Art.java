@@ -6,6 +6,10 @@ public class Art
     DrawingTool pen = new DrawingTool(pad);
     public void makeArt()
     {
+    }
+    
+    public void drawSunSwirl()
+    {
         Color testColor = userColor("red");
         double x = -500;
         double y = 0;
