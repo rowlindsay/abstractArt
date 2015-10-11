@@ -4,6 +4,7 @@ public class Circle
 {
     private double radius;
     private boolean fill;
+    private Color color;
     // pre: 
     // post:
     public Circle(double radius)
@@ -16,15 +17,16 @@ public class Circle
         this.radius=radius;
         this.fill=true;
     }
-    
-    public void draw(DrawingTool pen, Color color)
+
+    public void draw(DrawingTool pen)
+
     {
         if(fill==true)
         {
-            pen.setColor(color);
+            pen.setColor(this.color);
             pen.fillCircle(radius);
         }
-        pen.setColor(color);
+        pen.setColor(this.color);
         pen.drawCircle(radius);
     }
     
