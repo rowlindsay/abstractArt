@@ -10,7 +10,6 @@ public class Art
         {
             drawCircSwirl(-500,-100+(i*10));
             pen.home();
-   
         }
     }
     
