@@ -37,6 +37,6 @@ public class Rectangle
     
     public double getPerimeter()
     {
-        return length*2+(width*2);
+        return (length*2)+(width*2);
     }
 }

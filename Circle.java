@@ -10,11 +10,13 @@ public class Circle
     {
         this.radius=radius;
     }
+    
     public Circle(double radius, boolean fill)
     {
         this.radius=radius;
         this.fill=true;
     }
+    
     public void draw(DrawingTool pen, Color color)
     {
         if(fill==true)
@@ -24,5 +26,10 @@ public class Circle
         }
         pen.setColor(color);
         pen.drawCircle(radius);
+    }
+    
+    public int getPerimeter()
+    {
+        return (int)(this.radius*6.28);
     }
 }

@@ -29,4 +29,9 @@ public class Sunburst
             pen.down();         //Make a line then rotate to the next degree (counter clockwise)
         }
     }
+    
+    public int getPerimeter()
+    {
+        return(250*360);
+    }
 }
