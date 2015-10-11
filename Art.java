@@ -6,9 +6,10 @@ public class Art
     DrawingTool pen = new DrawingTool(pad);
     public void makeArt()
     {
+        
     }
     
-    public void drawSunSwirl()
+    public void drawCircSwirl()
     {
         Color testColor = userColor("red");
         double x = -500;
@@ -27,8 +28,8 @@ public class Art
             pen.down();
             if(i%10==0)
             {
-                Sunburst spot = new Sunburst(10,true);
-                spot.draw(pen);
+                Circle dot = new Circle(Math.random()*10);
+                dot.draw(pen);
             }
             x += 0.5;
         }

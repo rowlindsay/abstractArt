@@ -2,7 +2,7 @@
 comment0.params=
 comment0.target=void\ makeArt()
 comment1.params=
-comment1.target=void\ drawSunSwirl()
+comment1.target=void\ drawCircSwirl()
 comment2.params=color
 comment2.target=java.awt.Color\ userColor(java.lang.String)
 comment3.params=i\ curCol
