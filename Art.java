@@ -8,17 +8,16 @@ public class Art
     {
         for(int i = 0;i<=20;i++)
         {
-            drawCircSwirl();
-            pen.up();
-            pen.move(Math.random()*1080,Math.random()*1920);
-            pen.down();
+            drawCircSwirl(-500,-100+(i*10));
+            pen.home();
+   
         }
     }
     
-    public void drawCircSwirl()
+    public void drawCircSwirl(int xInit,int yInit)
     {
-        double x = -500;
-        double y = 0;
+        double x = xInit;
+        double y = yInit;
         int i2 = 0;
         pen.up();
         pen.move(x,y);
@@ -27,7 +26,7 @@ public class Art
         for(int i=0;i<=2000;i++)
         {
             pen.setColor(drawColor);
-            y = 100*Math.sin(0.0628*x);
+            y = yInit+(100*Math.sin(0.0628*x));
             pen.up();
             pen.move(x,y);
             pen.down();

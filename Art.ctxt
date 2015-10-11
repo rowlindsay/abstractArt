@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.params=
 comment0.target=void\ makeArt()
-comment1.params=
-comment1.target=void\ drawCircSwirl()
+comment1.params=xInit\ yInit
+comment1.target=void\ drawCircSwirl(int,\ int)
 comment2.params=i\ curCol
 comment2.target=java.awt.Color\ setRainColor(int,\ java.awt.Color)
 numComments=3
