@@ -7,16 +7,26 @@ public class Art
     public void makeArt()
     {
         Color testColor = userColor("red");
-        for(int i=0;i<=360;i++)
+        double x = -500;
+        double y = 0;
+        int i2 = 0;
+        pen.up();
+        pen.move(x,y);
+        pen.down();
+        Color drawColor = testColor;
+        for(int i=0;i<=2000;i++)
         {
+            pen.setColor(drawColor);
+            y = 100*Math.sin(0.0628*x);
             pen.up();
-            pen.forward(200);
+            pen.move(x,y);
             pen.down();
-            Tractal fun = new Tractal(10,testColor);
-            fun.draw(pen);
-            testColor = setRainColor(i,testColor);
-            pen.home();
-            pen.setDirection(i);
+            if(i%10==0)
+            {
+                Sunburst spot = new Sunburst(10,true);
+                spot.draw(pen);
+            }
+            x += 0.5;
         }
     }
     

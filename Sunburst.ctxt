@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Sunburst()
-comment1.params=rainbow
-comment1.target=Sunburst(boolean)
+comment1.params=radius\ rainbow
+comment1.target=Sunburst(int,\ boolean)
 comment2.params=pen
 comment2.target=void\ draw(gpdraw.DrawingTool)
 comment3.params=
