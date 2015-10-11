@@ -14,10 +14,11 @@ public class Tractal
     public void draw(DrawingTool pen)
     {
         int lengthDiv = 1;
-        int size = 300;
+        int size = 150;
         for(int i = scale; i>0; i--)
         {
             double triLength = (double)size/lengthDiv;
+            pen.setColor(this.color);
             Triangle fractTri = new Triangle(triLength,color);
             fractTri.draw(pen);
             pen.turnLeft(90);
@@ -25,8 +26,5 @@ public class Tractal
             pen.turnLeft(90);
             lengthDiv *= 2;
         }
-        pen.up();
-        pen.home();
-        pen.down();
     }
 }
