@@ -9,4 +9,6 @@ comment3.params=xInit\ yInit
 comment3.target=void\ drawCircSwirl(int,\ int)
 comment4.params=i\ curCol
 comment4.target=java.awt.Color\ setRainColor(int,\ java.awt.Color)
-numComments=5
+comment5.params=i
+comment5.target=java.awt.Color\ setRainColor2(int)
+numComments=6

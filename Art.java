@@ -11,7 +11,7 @@ public class Art
     
     public void testFractal(double size,double level)
     {
-        Triangle tri1 = new Triangle(size,Color.red);
+        Triangle tri1 = new Triangle(size,Color.black);
         tri1.draw(pen);
         double height = (Math.tan(Math.PI/3))*(size/4);
         pen.up();
@@ -20,7 +20,8 @@ public class Art
         pen.down();
         for(int i = (int)level; i>=1; i--)
         {
-            Triangle tri2 = new Triangle(size/2,Color.red);
+            Color drawColor = setRainColor2(i);
+            Triangle tri2 = new Triangle(size/2,drawColor);
             tri2.draw(pen);
             size /= 2;
             double moveHeight = (Math.tan(Math.PI/3))*(size/4);
@@ -107,6 +108,24 @@ public class Art
            b -= (int)(15/60);
         }
         Color newColor = new Color(r,g,b);
+        return newColor;
+    }
+    
+    static Color setRainColor2(int i)
+    {
+        Color newColor = Color.black; 
+        if(i==10||i==4)
+            newColor = Color.red;
+        else if(i==9||i==3)
+            newColor = Color.orange;
+        else if(i==8||i==2)
+            newColor = Color.yellow;
+        else if(i==7||i==2)
+            newColor = Color.green;
+        else if(i==6)
+            newColor = Color.blue;
+        else if(i==5)
+            newColor = Color.magenta;
         return newColor;
     }
 }
