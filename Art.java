@@ -6,11 +6,7 @@ public class Art
     DrawingTool pen = new DrawingTool(pad);
     public void makeArt()
     {
-        for(int i = 0;i<=20;i++)
-        {
-            drawCircSwirl(-500,-100+(i*10));
-            pen.home();
-        }
+       drawTractLoop(180,10);
     }
     
     public void drawTractLoop(int radius,int tractalScale)
