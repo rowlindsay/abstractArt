@@ -1,10 +1,12 @@
 #BlueJ class context
 comment0.params=
 comment0.target=void\ makeArt()
-comment1.params=radius\ tractalScale
-comment1.target=void\ drawTractLoop(int,\ int)
-comment2.params=xInit\ yInit
-comment2.target=void\ drawCircSwirl(int,\ int)
-comment3.params=i\ curCol
-comment3.target=java.awt.Color\ setRainColor(int,\ java.awt.Color)
-numComments=4
+comment1.params=size\ level
+comment1.target=void\ testFractal(double,\ double)
+comment2.params=radius\ tractalScale
+comment2.target=void\ drawTractLoop(int,\ int)
+comment3.params=xInit\ yInit
+comment3.target=void\ drawCircSwirl(int,\ int)
+comment4.params=i\ curCol
+comment4.target=java.awt.Color\ setRainColor(int,\ java.awt.Color)
+numComments=5

@@ -9,6 +9,30 @@ public class Art
        drawTractLoop(180,10);
     }
     
+    public void testFractal(double size,double level)
+    {
+        Triangle tri1 = new Triangle(size,Color.red);
+        tri1.draw(pen);
+        double height = (Math.tan(Math.PI/3))*(size/4);
+        pen.up();
+        pen.forward(height);
+        pen.turn(180);
+        pen.down();
+        for(int i = (int)level; i>=1; i--)
+        {
+            Triangle tri2 = new Triangle(size/2,Color.red);
+            tri2.draw(pen);
+            size /= 2;
+            double moveHeight = (Math.tan(Math.PI/3))*(size/4);
+            pen.up();
+            pen.forward(moveHeight);
+            pen.turnLeft(90);
+            pen.forward(size/2);
+            pen.turnRight(90);
+            pen.down();
+        }
+    }
+    
     public void drawTractLoop(int radius,int tractalScale)
     {
         Color testColor = Color.red;
